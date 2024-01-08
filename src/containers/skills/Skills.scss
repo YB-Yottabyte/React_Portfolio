@@ -6,6 +6,7 @@
   overflow: hidden;
 }
 
+
 .skills-text-div {
   margin-left: 50px;
 }
@@ -13,6 +14,7 @@
 .skills-main-div > * {
   flex: 1;
   margin-bottom: 30px;
+  
 }
 
 .skills-image-div > img {
@@ -62,3 +64,22 @@
     order: 2;
   }
 }
+
+$white: hsla(20, 60%, 99%, 1);
+$text-color: $oxford-blue;
+
+$gradient-top: linear-gradient(0deg, $oxford-blue, $penn-blue, $indigo-dye, $cerulean, $white);
+
+.skills-heading {
+  background-image: $gradient-top;
+  background-color: $text-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+

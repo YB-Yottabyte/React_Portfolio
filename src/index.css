@@ -34,3 +34,11 @@ body {
     line-height: normal;
   }
 }
+
+greeting-text-p {
+  text-align: center;
+  font-size: small;
+  color: red;
+}
+
+

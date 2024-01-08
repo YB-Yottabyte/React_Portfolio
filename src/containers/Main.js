@@ -9,14 +9,11 @@ import StartupProject from "./StartupProjects/StartupProject";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
-import Talks from "./talks/Talks";
-import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
-import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
+import {splashScreen} from "../portfolio"; 
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
@@ -60,9 +57,6 @@ const Main = () => {
             <StartupProject />
             <Achievement />
             <Blogs />
-            <Talks />
-            <Twitter />
-            <Podcast />
             <Profile />
             <Footer />
             <ScrollToTopButton />
