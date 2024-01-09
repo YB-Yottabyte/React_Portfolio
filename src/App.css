@@ -1,5 +1,10 @@
-@import "./globalColor";
-
+/* Change colors in this file to style to your needs on a global level. 
+Certain colors are used for different and multiply types of elements. 
+For greater control over colors visit each components .scss file. */
+/* SCSS HEX */
+/* SCSS HSL */
+/* SCSS RGB */
+/* SCSS Gradient */
 .App {
   text-align: center;
   width: 100%;
@@ -11,26 +16,25 @@
 }
 
 .App-header {
-  background-color: $appHeaderBG;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(0.625rem + 2vmin);
-  color: $textColorDark;
+  color: #ffffff;
 }
 
 .App-link {
-  color: $appLink;
+  color: #09d3ac;
 }
 
 .subTitle {
-  color: $subTitle;
+  color: #868e96;
 }
 
 /* YourComponent.css */
-
 .app {
   background: linear-gradient(to bottom, #e0e0e0, #a0a0a0);
   padding: 20px; /* Adjust the padding as needed */
@@ -38,3 +42,5 @@
 }
 
 /* Add any additional styles for your content inside the container if needed */
+
+/*# sourceMappingURL=App.css.map */

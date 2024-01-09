@@ -3,44 +3,48 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import './Experience.scss'; // Your component-specific styles
+import { Scrollbars } from 'react-custom-scrollbars';
+import 'aos/dist/aos.css'; // Import the AOS CSS file
+
 
 // Splash Screen
 
-const splashScreen = {
+  const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
-};
+  };
 
 // Summary And Greeting Section
 
-const illustration = {
+  const illustration = {
   animated: true // Set to false to use static SVG
-};
+  };
 
-const greeting = {
+  const greeting = {
   username: "Sai Rithwik Kukunuri",
   title: "Hi all, I'm Sai Rithwik",
   subTitle: emoji(
     "I'm Sai Rithwik, a high school senior passionate about Computer Science. My journey has been a mix of coding challenges and collaborative projects, fueling my love for innovation. Excited for the next chapter, I look forward to contributing to the ever-evolving world of Computer Science."
   ),
   displayGreeting: true // Set false to hide this section, defaults to true
-};
+  };
 
 // Social Media Links
 
-const socialMediaLinks = {
+  const socialMediaLinks = {
   github: "https://github.com/YB-Yottabyte",
   linkedin: "https://www.linkedin.com/in/sai-rithwik-kukunuri-b5084527b/",
   gmail: "sairithwik0108@gmail.com",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
-};
+  };
 
 // Skills Section
 
-const skillsSection = {
+  const skillsSection = {
   title: "A Bit About Me",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
@@ -97,13 +101,21 @@ https://fontawesome.com/icons?d=gallery */
     },
   ],
   display: true // Set false to hide this section, defaults to true
-};
+  };
+
+
+
+
+// Experience.js
+
+
+
 
 
 
 // Education Section
 
-const educationInfo = {
+  const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
@@ -125,10 +137,10 @@ const educationInfo = {
       descBullets: ["Completed CBSE Grade 9 and Grade 10"]
     }
   ]
-};
+  };
 
 // Your top 3 proficient stacks/tech experience
-const techStack = 
+  const techStack = 
 {
   viewSkillBars : true,
    experience: [
@@ -160,11 +172,11 @@ const techStack =
     }
   ],
    displayCodersrank: true
-}
+  }
 
 // Work experience section
 
-const workExperiences = {
+  const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
@@ -193,12 +205,12 @@ const workExperiences = {
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
-};
+  };
 
 
 // Some big projects you have worked on
 
-const bigProjects = {
+  const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
@@ -227,12 +239,12 @@ const bigProjects = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+  };
 
 // Achievement Section
 // Include certificates, talks etc
 
-const achievementSection = {
+  const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
@@ -288,11 +300,11 @@ const achievementSection = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+  };
 
 // TESTIMONALS Section
 
-const blogSection = {
+  const blogSection = {
   title: "Don't just take my word for it...",
   subtitle:
     "Here are a few lines from people who I have worked with over in my career.",
@@ -318,7 +330,7 @@ const blogSection = {
     }
   ],
   display: true // Set false to hide this section, defaults to true
-};
+  };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
@@ -326,14 +338,30 @@ const contactInfo = {
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
-};
+  };
 
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
+
+const MainContent = () => {
+  return (
+    <Scrollbars style={{ width: '100%', height: '100vh' }}>
+      <div>
+         <div className="greeting-section">
+          </div>
+      </div>
+    </Scrollbars>
+  );
+};
+
+export default Experience;
+
 export {
   illustration,
   greeting,
+  MainContent,
+  Experience,
   socialMediaLinks,
   splashScreen,
   skillsSection,
