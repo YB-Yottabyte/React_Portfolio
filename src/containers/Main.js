@@ -16,8 +16,6 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio"; 
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
-import React from 'react';
-import Experience from './path-to-Experience'; // Adjust the path
 
 import "./Main.scss";
 
@@ -41,21 +39,6 @@ const Main = () => {
 
 
 
-// App.js
-
-const App = () => {
-  return (
-    <div>
-      {/* Other components or content */}
-      <Experience />
-    </div>
-  );
-};
-
-
-
-
-
   const changeTheme = () => {
     setIsDark(!isDark);
   };
@@ -69,7 +52,6 @@ const App = () => {
           <>
             <Header />
             <Greeting />
-            <App/>
             <Skills />
             <StackProgress />
             <Education />

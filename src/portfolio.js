@@ -106,8 +106,6 @@ https://fontawesome.com/icons?d=gallery */
 
 
 
-// Experience.js
-
 
 
 
@@ -355,13 +353,11 @@ const MainContent = () => {
   );
 };
 
-export default Experience;
 
 export {
   illustration,
   greeting,
   MainContent,
-  Experience,
   socialMediaLinks,
   splashScreen,
   skillsSection,
